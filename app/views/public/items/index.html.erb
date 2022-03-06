@@ -1,0 +1,35 @@
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <h5>ジャンル検索</h5>
+        <table class="table">
+          <tbody>
+
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-9">
+        <h4>商品一覧</h4>
+
+        <table class="table">
+          <thead></thead>
+          <%= @items.each do |item| %>
+            <tbody>
+              <tr>
+                <!--<td><% image_tag item.get_image %></td>
+                <td><% item.name %></td>
+                <td>￥<% item.price %></td>-->
+                <td>image</td>
+                <td>item_name</td>
+                <td>item_price</td>
+              </tr>
+            </tbody>
+             <% end %>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</main>
